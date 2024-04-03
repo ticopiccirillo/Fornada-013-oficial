@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style-componentes.css">
     <title>Fornada 013</title>
 </head>
@@ -11,9 +25,11 @@
    <section class="interface">
        
             <header class="header" id="header">
-                <a class="logo" href="#">
-                    <img id="logo" src="images" alt="logo fornada 013">
-                </a>
+                <div class="logo">
+                    <a class="logo" href="#">
+                        <img id="logo" src="images/logotransparente.jpg" alt="logo fornada 013">
+                    </a>
+                </div>
 
                 <nav class="nav" id="nav">
                     <ul class="menu" id="menu" >
@@ -31,14 +47,54 @@
                         </li>
                     </ul>
 
-                    <button class="btn-mobile" aria-expanded="false">
-                        <span id="hamburger"></span>
+                    <button class="btn-mobile" onclick="handleClick()" aria-expanded="false" type="button" id="btn_mobile">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
                 </nav>
+                <div class="contatos">
+                    <div class="btn-contatos">
+                        <ul class="contatos-btn">
+                            <a href="https://www.instagram.com/fornada013" target="_blank">
+                                <li class="btn" style="--cor1:#fb3997; --cor2:#febf12;">
+                                        <span class="icon">
+                                            <i class="bi bi-instagram"></i>
+                                        </span>
+                                        <span class="text">Instagram</span>
+                                </li>
+                            </a>
+                            <a href="https://www.facebook.com/fornada013" target="_blank">
+                                    <li class="btn" style="--cor1:#85d8f2; --cor2:#005eff;">
+                                        <span class="icon">
+                                            <i class="bi bi-facebook"></i>
+                                        </span>
+                                        <span class="text">Facebook</span>
+                                    </li>
+                            </a>
+                            <a href="https://shre.ink/HOnX" target="_blank">
+                                    <li class="btn" style="--cor1:#5ce58c; --cor2:#008504;">
+                                        <span class="icon">
+                                            <i class="bi bi-whatsapp"></i>
+                                        </span>
+                                        <span class="text">Whatssap</span>
+                                    </li>
+                            </a>
+                            <!--<a href="https://www.youtube.com/@Titasouzapersonal" target="_blank">
+                                <li class="btn" style="--cor1:#fc0000; --cor2:#f89999;">
+                                    <span class="icon">
+                                        <i class="bi bi-youtube"></i>
+                                    </span>
+                                    <span class="text">Youtube</span>
+                                </li>
+                            </a>-->
+                        </ul><!--contatos-btn-->
+                    </div><!--btn-contatos-->
+                </div><!--contatos-->
             </header>
-    </section>
+    </section><!--interface-->
 
-    <main  class="interface" id="main">
+   <!-- <main  class="interface" id="main">
         <div class="img-fundo">
             <div class="text-img-fundo">
                 <h1> 
@@ -48,8 +104,8 @@
                     Produtos de panificação 100% naturais e frescos. <br>
                     Produzidos com o verdadeiro levain!
                 </span>
-            </div><!--text-img-fundo-->           
-        </div><!--img-fundo-->
+            </div><!--text-img-fundo         
+        </div><!--img-fundo
 
         <button class="button-default">
             <a href="https://fornada-013.goomer.app" target="_blank" rel="external">
@@ -64,8 +120,8 @@
                 <p class="text-1 video">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure et odit minus accusantium distinctio. Qui dolorum quas dolore quis tenetur alias pariatur, architecto quo. Veniam facilis odit hic eius? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem suscipit ab sapiente repudiandae inventore non necessitatibus dolores incidunt vitae? Illum excepturi voluptatem ratione culpa est repudiandae vel molestias itaque omnis.
                 </p>
-            </div> <!--video-descricao-->
-        </section><!--info-->
+            </div> <!--video-descricao
+        </section><!--info
 
         <section class="sobre interface" id="sobre">
                 <h2> Um pouco da nossa história!</h2>
@@ -75,7 +131,7 @@
                     </p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Hidi5oTCoJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div><!--video-descricao-->
-        </section><!--sobre-->
+        </section><!--sobre
 
         <Section class="produtos interface">
             <div class="produtos-container">
@@ -92,10 +148,10 @@
                     </div>
                     <div class="card-single active">
                         <img src="imagens/paes.jpg" alt="">
-                    </div><!--card-single-->
+                    </div><!--card-single
                 </article><!--cards-->
-            </div><!--produtos-container-->
-        </Section><!--produtos-->
+            </div><!--produtos-container
+        </Section><!--produtos
 
         <Section class="dicas interface">
             <h2>Dicas do Padeiro</h2>
@@ -121,14 +177,14 @@
                     Em geral, como nossos pães são feitos com levains naturais, ou pré-fermentos, eles permanecem frescos por muito mais tempo do que os pães padrão de fábrica de processo rápido. Em boas condições, os pães duram cerca de uma semana à temperatura ambiente. Para o pão que você vai comer no mesmo dia ou no dia seguinte, basta deixar o pão na tábua com a ponta cortada para baixo. Ou guarde-o embrulhado em um saco de papel ou cubra-o frouxamente com um saco plástico. Para um armazenamento mais longo, o congelamento é uma excelente opção. Basta embrulhar bem o pão em um saco plástico e congelar. Ao removê-lo, deixe-o descansar no saco até que todos os sinais de gotas de água desapareçam.
                 </p>
             </div>
-        </Section><!--dicas-->
+        </Section><!--dicas
 
         <section class="comprar interface" id="comprar" >
             <h2>Peça seu PÃO.</h2>
                     <a href="https://fornada-013.goomer.app" target="_blank" rel="external">
                         Compre Aqui!
                     </a>
-        </section><!--comprar-->
+        </section><!--comprar
 
         <section class="depoimentos interface">
             <h2>Depoimentos</h2>
@@ -146,7 +202,7 @@
                         <span>Francisco - Desenvolvimento web</span>
                     </div>
             </div><!--testemunhos-->
-        </section><!--depoimentos-->
+        </section><!--depoimentos
     </main> 
     <footer class="interface">
         <section class="footer-container">
@@ -167,18 +223,19 @@
                         <p>Rua Carlos Gomes, 165 Fundos 2 - Santos</p>
                         <img src="imagens/icone-local.png" alt="icone localização" class="icone-contato">
                     </a>
-                </div><!--contatos-footer-->
+                </div><!--contatos-footer
                 <div class="dias-fornada">
                     <h3>Dias de Fornada</h3>
                     <p>Quartas e sextas</p>
                     <p>Temos retirada a partir das 10h da manhã, <br> e também temos delivery.</p>
-                </div><!--dias-fornada-->
-            </div><!--contatos-container-->
-        </section><!--footer-container-->
+                </div><!--dias-fornada
+            </div><!--contatos-container
+        </section><!--footer-container
 
         <span>Site desenvolvido por Tico Piccirillo - Copyright &copy; 2023 Fornada 013 - Todos os direitos reservados. </span>
        
-    </footer><!--interface-->
+    </footer><!--interface
+-->
 
 <script src="javascript/js.js"> </script>
 </body>
